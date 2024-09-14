@@ -9,7 +9,7 @@ const useSendMessage = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://chat-app-backend-alpha-nine.vercel.app/api/messages/send/${selectedConversation._id}`,
+        `https://chat-app-tan-nine-10.vercel.app/api/messages/send/${selectedConversation._id}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -9,7 +9,7 @@ const useGetMessages = () => {
     const getMessages = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`https://chat-app-backend-95v3xbu02-vicheas-projects-8a365879.vercel.app/api/messages/${selectedConversation._id}`);
+        const res = await fetch(`https://chat-app-backend-alpha-nine.vercel.app/api/messages/${selectedConversation._id}`);
         const data = await res.json();
         if (data.error) {
           throw new Error(error.message);

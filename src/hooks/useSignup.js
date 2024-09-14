@@ -24,7 +24,7 @@ const useSignup = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("https://chat-app-backend-95v3xbu02-vicheas-projects-8a365879.vercel.app/api/auth/signup", {
+      const res = await fetch("https://chat-app-backend-alpha-nine.vercel.app/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

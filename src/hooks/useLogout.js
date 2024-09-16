@@ -9,7 +9,7 @@ const useLogout = () => {
   const logout = async () => {
     setLoading(true);
     try {
-      const res = await fetch("https://chat-app-tan-nine-10.vercel.app/api/auth/logout", {
+      const res = await fetch("https://chat-app-backend-zhg0.onrender.com/api/auth/logout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       });

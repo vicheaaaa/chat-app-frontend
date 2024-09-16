@@ -8,7 +8,7 @@ const useGetConversation = () => {
     const getConversations = async () => {
       setLoading(true);
       try {
-        const res = await fetch("https://chat-app-tan-nine-10.vercel.app/api/users");
+        const res = await fetch("https://chat-app-backend-zhg0.onrender.com/api/users");
         const data = await res.json();
         if (data.error) {
           throw new Error(error.message);
